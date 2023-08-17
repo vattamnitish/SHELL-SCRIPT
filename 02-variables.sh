@@ -1,5 +1,5 @@
 #!/bin/bash
 
-DATE=$(DATE)
+DATE=$(date)
 
-echo "Hello,this script is executed at timestamp: $DATE
+echo "Hello,this script is executed at timestamp: $DATE"
