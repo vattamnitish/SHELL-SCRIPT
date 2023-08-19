@@ -1,6 +1,6 @@
 #!/bin/bash
-PERSONS = ("ramesh" "suresh" "bhavana")
-echo "first person: ${PERSON[0]}"
-echo "all persons: ${PERSON[@]}"
+PERSONS=("ramesh" "suresh" "bhavana")
+echo "first person: ${PERSONS[0]}"
+echo "all persons: ${PERSONS[@]}"
 
 
