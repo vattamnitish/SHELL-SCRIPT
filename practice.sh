@@ -1,7 +1,6 @@
 #!/bin/bash
-PERSON1=$1
-PERSON2=$2
-echo "$PERSON1: Hi $PERSON2 good morning"
-echo "$PERSON2: good morning $PERSON1"
-echo "$PERSON1: how are you $PERSON2"
-echo "$PERSON2: i am good $PERSON1"
+NUMBER1=$1
+NUMBER2=$2
+sum = $ ((NUMBER1+NUMBER2))
+echo "addition of two numbers is :$sum"
+
