@@ -1,11 +1,11 @@
 #!/bin/bash
-NUMBER=$1
-if [ $NUMBER -gt 10 ]
+USERID =$(id-u)
+if [ $USERID -ne 0 ]
 then
-    echo "$NUMBER is greater than 10"
-else
-    echo "$NUMBER is leaa than 10"
+    echo "error:please run the script in sudo access"
+    exit 1
 fi
+yum install mysql -y
 
 
 
