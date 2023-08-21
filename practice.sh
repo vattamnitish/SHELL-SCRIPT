@@ -1,4 +1,15 @@
 #!/bin/bash
+validate (){
+    if [ $1 -ne 0 ]
+    then
+    echo "$2 is failure"
+    exit 1
+    else
+    echo "$2 is sucess"
+    fi
+
+}
+
 
 USERID=$(id -u)
 if [ $USERID -ne 0 ]
@@ -9,19 +20,12 @@ if [ $USERID -ne 0 ]
 fi
 
 yum install mysql -y
-if [ $? -ne 0]
-    then
-    echo "installation of my sql is error"
-    else
-    echo "installation of my sql is sucess"
-fi
+VALIDATE $? "INSTALLING my sql"
+   
 yum install postfix -y
-if [ $? -ne 0 ]
-    then
-    echo "installation of post fix is error"
-    else
-    echo "installation of postfix is sucess"
-fi
+VALIDATE $? "INSTALLING post fix"
+
+
 
 
 
